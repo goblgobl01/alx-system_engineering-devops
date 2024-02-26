@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+file_path="./school"
+
+if test -e $file_path; then
+    echo "school file exists"
+    if test -s "$file_path"; then
+        echo "School file is empty"
+    else
+        echo "School file is not empty"
+    fi
+    if [ -f "$file_path" ]; then
+        echo "File is a regular file."
+    fi
+else
+    echo "school file does not exist"
+fi
