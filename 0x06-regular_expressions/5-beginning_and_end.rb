@@ -1,2 +1,2 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/h([a-zA-Z0-9]+)n/).map { |match| "h#{match[0]}n" }
+puts ARGV[0].scan(/h([a-zA-Z0-9])n/).map { |match| "h#{match[0]}n" }
