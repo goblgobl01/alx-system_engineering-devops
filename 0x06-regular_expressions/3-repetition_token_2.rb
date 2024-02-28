@@ -1,2 +1,2 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/hb(t+)n/).map { |match| "hb#{match[0]}n" }
+puts ARGV[0].scan(/hbt+n/).join
