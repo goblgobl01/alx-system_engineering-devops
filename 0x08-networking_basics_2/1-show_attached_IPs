@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Run the ifconfig command and store its output in a variable.
+
+ifconfig_output=$(ifconfig)
+echo "$ifconfig_output" | grep -Eo 'inet ([0-9]{1,3}\.){3}[0-9]{1,3}' | cut -d ' ' -f 2
